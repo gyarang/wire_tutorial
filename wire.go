@@ -5,7 +5,7 @@ package main
 
 import "github.com/google/wire"
 
-func InitHuman(cd string) (Human, error) {
+func InitHuman(animalType string) (Human, error) {
 	wire.Build(NewHuman, NewAnimal)
 	return Human{}, nil
 }

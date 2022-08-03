@@ -8,8 +8,8 @@ package main
 
 // Injectors from wire.go:
 
-func InitHuman(cd string) (Human, error) {
-	animal, err := NewAnimal(cd)
+func InitHuman(animalType string) (Human, error) {
+	animal, err := NewAnimal(animalType)
 	if err != nil {
 		return Human{}, err
 	}
